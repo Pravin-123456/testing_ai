@@ -1,0 +1,85 @@
+{
+  "findYourName": {
+    "version": 1,
+    "campaign": {
+      "title": "A little name-finding adventure",
+      "brandName": "Your campaign brand",
+      "logoUrl": "https://cdn.example.org/brand-mark.svg"
+    },
+    "story": {
+      "title": "A little wonder is waiting.",
+      "subtitle": "Your name is hiding somewhere in this world. Take a closer look and see if you can find it.",
+      "instructions": "Move the magnifying glass through the scene. Find your name and uncover a few hidden treats along the way.",
+      "startLabel": "Find my name",
+      "completionHeading": "You found your name!",
+      "completionMessage": "You solved the mystery. Think your friends can find their own names?",
+      "challengeHeading": "Now it’s their turn.",
+      "challengeMessage": "Send a little mystery to someone you like. They’ll search for their own name when they arrive.",
+      "playAgainLabel": "Play again"
+    },
+    "theme": {
+      "colors": {
+        "ink": "#202b26",
+        "title": "#202b26",
+        "text": "#202b26",
+        "muted": "#6d7169",
+        "paper": "#f4f0e7",
+        "accent": "#b8533d",
+        "accentInk": "#fffaf2",
+        "forest": "#243b34",
+        "soft": "#eee7d9",
+        "line": "#ded5c4"
+      },
+      "typography": {
+        "titleFamily": "Georgia",
+        "bodyFamily": "system-ui",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      },
+      "buttonRadius": 14
+    },
+    "scene": {
+      "backgroundImage": "https://cdn.example.org/campaign/scene.webp",
+      "backgroundColor": "#27342d",
+      "width": 1600,
+      "height": 1000,
+      "target": {
+        "x": 0.5,
+        "y": 0.38,
+        "radius": 0.085,
+        "hint": "Look near the warm light in the center of the scene.",
+        "rotation": -2,
+        "fontSize": 2.7,
+        "maxWidth": 0.45
+      },
+      "hotspots": [
+        {
+          "productId": "exact-product-id-from-fetchActiveOffers",
+          "x": 0.22,
+          "y": 0.7,
+          "radius": 0.09,
+          "hint": "Try the old bookstall.",
+          "artworkUrl": "https://cdn.example.org/campaign/hidden-product-detail.webp",
+          "rotation": 4
+        }
+      ],
+      "zoom": 2.05,
+      "lensSize": 176,
+      "mobileLensSize": 132,
+      "difficulty": "standard",
+      "discoveryAnimation": "sparkle",
+      "hintButtonLabel": "A little hint",
+      "panOnMobile": true
+    },
+    "productModal": {
+      "presentation": "bottom-sheet",
+      "continueLabel": "Continue exploring"
+    },
+    "sharing": {
+      "message": "I found my name in {campaign_title}! 🎉 Can you find yours? Try it here: {campaign_url}",
+      "canonicalUrl": "/",
+      "challengeLabel": "Challenge your friends",
+      "whatsappLabel": "WhatsApp",
+      "copyLabel": "Copy challenge link"
+    }
+  }
+}
